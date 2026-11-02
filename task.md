@@ -1,0 +1,12 @@
+-?Kläreung der Befugnisse für Claude rolle,verhalten, Rechete
+-?Projektplanung was wird gebaut? Welche Frameworks und Stacks benötigen wir
+
+-? erstellen eine Claude.md
+-? Ausarbeiten einer Tasks.md
+-?Klären des Techstacks (Framework etc )
+-!Frage immer bevor du code schreibst
+-! Bei JS und TS wird mir der Code immer vorher gezeigt bevor er in das Projekt kommt
+-!JS bzw Ts wir immer Diskutiet
+-!Halte dich an BestPraktis
+-!Code soll immer gut für menschen Lesbar sein
+-?wir erstellen eine Liste von Skills 
