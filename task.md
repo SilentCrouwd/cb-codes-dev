@@ -9,4 +9,4 @@
 -!JS bzw Ts wir immer Diskutiet
 -!Halte dich an BestPraktis
 -!Code soll immer gut für menschen Lesbar sein
--?wir erstellen eine Liste von Skills 
+-?wir erstellen eine Liste von Skills

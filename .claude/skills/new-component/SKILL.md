@@ -12,7 +12,10 @@ Propose a new React + TypeScript component. Never write it into the project befo
 1. Clarify purpose: what the component shows/does and where it is used. Ask if unclear.
 2. Check Tasks.md and existing components – reuse before creating something new.
 3. Propose in chat:
-   - File name and location (PascalCase, e.g. `src/components/ProjectCard.tsx`)
+   - File name and location (PascalCase), following the folder structure in CLAUDE.md:
+     - Section: `src/sections/Hero/Hero.tsx`
+     - Used only in one section: `src/sections/Projects/components/ProjectCard.tsx`
+     - Used in several sections: `src/components/`
    - Props as a TypeScript `type` (no `any`)
    - The full component code
 4. Explain the code in German at junior level:
@@ -23,7 +26,7 @@ Propose a new React + TypeScript component. Never write it into the project befo
 
 ## Rules
 - One component per file, named export
-- Data (texts, lists) lives in `src/data/`, not hardcoded in components
+- Content (texts, lists) lives in `src/content/`, not hardcoded in components
 - Semantic HTML (`section`, `nav`, `article`, ...) and accessible markup
 - Styling with Tailwind v4 utility classes; follow frontend-design skill for visual decisions
 - Comments in English, only where the code is not self-explanatory

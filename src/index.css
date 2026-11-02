@@ -1,0 +1,56 @@
+@import 'tailwindcss';
+@import '@fontsource/young-serif';
+@import '@fontsource-variable/atkinson-hyperlegible-next';
+
+@theme {
+  /* Palette – the actual colors (see design plan in CLAUDE.md) */
+  --color-aubergine: #241b26;
+  --color-aubergine-soft: #33283a;
+  --color-aubergine-light: #34233a;
+  --color-aubergine-deep: #1c1520;
+  --color-mehl: #f3ede8;
+  --color-pfeffer: #a99ca8;
+  --color-rote-bete: #e0558a;
+
+  /* Roles – what a color is used for. Components use only these,
+     so a light mode later only needs to remap the roles. */
+  --color-page: var(--color-aubergine);
+  --color-page-from: var(--color-aubergine-light);
+  --color-page-to: var(--color-aubergine-deep);
+  --color-surface: var(--color-aubergine-soft);
+  --color-text: var(--color-mehl);
+  --color-muted: var(--color-pfeffer);
+  --color-accent: var(--color-rote-bete);
+
+  /* Fonts (self-hosted via Fontsource) */
+  --font-display: 'Young Serif', Georgia, serif;
+  --font-sans: 'Atkinson Hyperlegible Next Variable', system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    background-color: var(--color-page);
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 4px;
+  }
+
+  body {
+    @apply font-sans text-text antialiased;
+    background-image: linear-gradient(
+      135deg,
+      var(--color-page-from) 0%,
+      var(--color-page) 45%,
+      var(--color-page-to) 100%
+    );
+  }
+}

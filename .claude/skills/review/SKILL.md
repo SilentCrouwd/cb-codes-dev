@@ -31,7 +31,9 @@ Do not change any files – report findings in chat only.
 
 **Project rules**
 - Comments and docs in English
-- Data in `src/data/`, not hardcoded
+- Content in `src/content/`, not hardcoded
+- Colors: role tokens only (`text-text`, `bg-surface`, `text-accent`, ...) – no palette names, no hex values
+- Files placed according to the folder structure in CLAUDE.md
 - Visual decisions follow the frontend-design skill (no generic AI tells)
 
 ## Output
