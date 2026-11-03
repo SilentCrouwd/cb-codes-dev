@@ -53,16 +53,20 @@
 
 ## Phase 4 – Polish
 
-- [ ] Responsive design (mobile first)
-- [ ] Subtle animations (hero lines fade in on load, respect reduced motion)
-- [ ] Light mode (follows `prefers-color-scheme`; remap role tokens only, own preview first)
-- [ ] Accessibility (semantic HTML, contrast, keyboard navigation)
-- [ ] SEO basics (title, meta description, Open Graph, favicon)
-- [ ] Performance check (Lighthouse)
+- [x] Responsive design (mobile first)
+- [x] Subtle animations (hero lines fade in on load, respect reduced motion)
+- [x] Light mode (follows `prefers-color-scheme`; remap role tokens only, own preview first)
+  - No toggle button (decided against it; dark stays the default)
+- [x] Accessibility (semantic HTML, contrast, keyboard navigation)
+  - Skip link, labels moved to content, `lang="en"` for "Powered by", accent lightened to `#E86A98`
+- [x] SEO basics (title, meta description, Open Graph, favicon)
+  - `og:image` still missing (see "Content")
+- [x] Performance check (Lighthouse)
+  - Mobile, production build: Performance 99, Accessibility 100, Best Practices 100, SEO 100
 
 ## Phase 5 – Deployment
 
-- [ ] Create Impressum and Datenschutz pages (required before going live; footer already links to `impressum.html` / `datenschutz.html`)
+- [x] Create Impressum and Datenschutz pages (required before going live; combined on one page `rechtliches.html`)
 - [ ] GitHub Actions workflow (.yml) for GitHub Pages
 - [ ] Enable GitHub Pages in repo settings
 - [ ] Verify live site
@@ -74,9 +78,11 @@
 - [ ] Projects: real descriptions and tech per project (`src/content/projects.ts`)
 - [ ] Projects: links per project – GitHub, live demo (`src/content/projects.ts`)
 - [ ] Projects: screenshots 16:10 (`src/sections/Projects/components/ProjectCard.tsx`)
-- [ ] Contact: real GitHub and LinkedIn links (`src/content/contact.ts`)
+- [x] Contact: real GitHub and LinkedIn links (`src/content/contact.ts`)
+- [ ] Open Graph image 1200 × 630 px (`og:image` in `index.html`)
 - [ ] Contact: photo of Chris, portrait 4:5 (`src/sections/Contact/Contact.tsx`)
 - [ ] Footer: cb.codes.design logo (`src/components/Footer.tsx`), link to business website if available
+- [ ] Impressum and Datenschutz: fill in placeholders, check Datenschutz draft (`src/content/legal.ts`)
 - [ ] Final pass: review all texts one by one
 
 ## Later

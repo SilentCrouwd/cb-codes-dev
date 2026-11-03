@@ -11,11 +11,13 @@ export function Hero() {
       </div>
 
       <div className="relative mx-auto w-full max-w-6xl px-6">
-        <h1 className="font-display text-5xl md:text-7xl">{hero.name}</h1>
-        <p className="mt-6 max-w-prose text-lg text-muted md:text-xl">
+        <h1 className="font-display text-5xl motion-safe:animate-fade-in-up motion-safe:[animation-delay:300ms] md:text-7xl">
+          {hero.name}
+        </h1>
+        <p className="mt-6 max-w-prose text-lg text-muted motion-safe:animate-fade-in-up motion-safe:[animation-delay:600ms] md:text-xl">
           {hero.story}
         </p>
-        <ul className="mt-10 flex flex-wrap gap-8">
+        <ul className="mt-10 flex flex-wrap gap-8 motion-safe:animate-fade-in-up motion-safe:[animation-delay:900ms]">
           {hero.links.map((link) => (
             <li key={link.href}>
               <a

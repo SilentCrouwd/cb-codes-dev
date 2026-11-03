@@ -17,7 +17,7 @@ export const footer: FooterContent = {
   businessName: 'cb.codes.design',
   navLabel: 'Rechtliches',
   links: [
-    { label: 'Impressum', href: 'impressum.html' },
-    { label: 'Datenschutz', href: 'datenschutz.html' },
+    { label: 'Impressum', href: 'rechtliches.html#impressum' },
+    { label: 'Datenschutz', href: 'rechtliches.html#datenschutz' },
   ],
 };

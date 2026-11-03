@@ -10,7 +10,14 @@
   --color-aubergine-deep: #1c1520;
   --color-mehl: #f3ede8;
   --color-pfeffer: #a99ca8;
-  --color-rote-bete: #e0558a;
+  --color-rote-bete: #e86a98;
+
+  /* Light palette – only used when the visitor's system is set to light */
+  --color-mehl-hell: #fbf8f5;
+  --color-mehl-dunkel: #ede5e1;
+  --color-schalotte: #e4d9db;
+  --color-pfeffer-dunkel: #6b5d6c;
+  --color-rote-bete-dunkel: #b8326a;
 
   /* Roles – what a color is used for. Components use only these,
      so a light mode later only needs to remap the roles. */
@@ -25,6 +32,33 @@
   /* Fonts (self-hosted via Fontsource) */
   --font-display: 'Young Serif', Georgia, serif;
   --font-sans: 'Atkinson Hyperlegible Next Variable', system-ui, sans-serif;
+
+  /* Motion: hero lines fade in and move up slightly */
+  --animate-fade-in-up: fade-in-up 1s ease-out both;
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(0.75rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Light mode: remap the roles only – components stay unchanged */
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-page: var(--color-mehl);
+    --color-page-from: var(--color-mehl-hell);
+    --color-page-to: var(--color-mehl-dunkel);
+    --color-surface: var(--color-schalotte);
+    --color-text: var(--color-aubergine);
+    --color-muted: var(--color-pfeffer-dunkel);
+    --color-accent: var(--color-rote-bete-dunkel);
+  }
 }
 
 /* Fades an element in from left (transparent) to right (fully visible) */
@@ -35,7 +69,14 @@
 @layer base {
   html {
     background-color: var(--color-page);
+    color-scheme: dark;
     scroll-behavior: smooth;
+  }
+
+  @media (prefers-color-scheme: light) {
+    html {
+      color-scheme: light;
+    }
   }
 
   @media (prefers-reduced-motion: reduce) {

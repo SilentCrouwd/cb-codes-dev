@@ -17,8 +17,10 @@ export const contact: ContactContent = {
       label: 'E-Mail schreiben',
       href: 'mailto:chris.buchholz.lauenau@gmail.com',
     },
-    // TODO: replace placeholder usernames with the real profile links
-    { label: 'GitHub', href: 'https://github.com/USERNAME' },
-    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/USERNAME' },
+    { label: 'GitHub', href: 'https://github.com/SilentCrouwd' },
+    {
+      label: 'LinkedIn',
+      href: 'https://www.linkedin.com/in/christian-buchholz-36aa60234/',
+    },
   ],
 };

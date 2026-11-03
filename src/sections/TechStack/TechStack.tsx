@@ -6,7 +6,7 @@ export function TechStack() {
     <section
       id="werkzeuge"
       aria-labelledby="werkzeuge-heading"
-      className="mx-auto max-w-6xl px-6 py-24"
+      className="mx-auto max-w-6xl border-t border-surface px-6 py-16 md:py-24"
     >
       <h2 id="werkzeuge-heading" className="font-display text-3xl md:text-4xl">
         {techStack.heading}

@@ -9,3 +9,17 @@ export const navItems: NavItem[] = [
   { label: 'Werkzeuge', href: '#werkzeuge' },
   { label: 'Kontakt', href: '#kontakt' },
 ];
+
+export type NavigationLabels = {
+  skipLink: string;
+  mainNav: string;
+  logo: string;
+  backToHome: string;
+};
+
+export const navigationLabels: NavigationLabels = {
+  skipLink: 'Zum Inhalt springen',
+  mainNav: 'Hauptnavigation',
+  logo: 'CB – Christian Buchholz, zum Seitenanfang',
+  backToHome: '← Zur Startseite',
+};

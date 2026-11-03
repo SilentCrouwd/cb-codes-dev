@@ -5,7 +5,7 @@ export function About() {
     <section
       id="ueber-mich"
       aria-labelledby="ueber-mich-heading"
-      className="mx-auto max-w-6xl px-6 py-24 md:grid md:grid-cols-[1fr_2fr] md:gap-16"
+      className="mx-auto max-w-6xl border-t border-surface px-6 py-16 md:grid md:py-24 md:grid-cols-[1fr_2fr] md:gap-16"
     >
       <h2 id="ueber-mich-heading" className="font-display text-3xl md:text-4xl">
         {about.heading}

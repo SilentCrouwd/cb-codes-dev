@@ -9,7 +9,7 @@ export function Footer() {
         © {currentYear} {footer.copyrightName}
       </p>
       <p className="flex items-center gap-2">
-        {footer.poweredByLabel}
+        <span lang="en">{footer.poweredByLabel}</span>
         {/* Logo placeholder – replaced by the cb.codes.design logo later */}
         <span aria-hidden="true" className="size-5 rounded-full bg-surface" />
         <span className="text-text">{footer.businessName}</span>

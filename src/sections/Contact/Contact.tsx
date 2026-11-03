@@ -5,7 +5,7 @@ export function Contact() {
     <section
       id="kontakt"
       aria-labelledby="kontakt-heading"
-      className="mx-auto max-w-6xl px-6 py-24 md:grid md:grid-cols-[2fr_1fr] md:items-center md:gap-16"
+      className="mx-auto max-w-6xl border-t border-surface px-6 py-16 md:grid md:py-24 md:grid-cols-[2fr_1fr] md:items-center md:gap-16"
     >
       <div>
         <h2 id="kontakt-heading" className="font-display text-3xl md:text-4xl">

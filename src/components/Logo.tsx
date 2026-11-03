@@ -1,8 +1,14 @@
-export function Logo() {
+import { navigationLabels } from '../content/navigation';
+
+type LogoProps = {
+  href?: string;
+};
+
+export function Logo({ href = '#top' }: LogoProps) {
   return (
     <a
-      href="#top"
-      aria-label="Christian Buchholz – zum Seitenanfang"
+      href={href}
+      aria-label={navigationLabels.logo}
       className="flex size-13 items-center justify-center rounded-full border-2 border-text font-display text-xl"
     >
       CB

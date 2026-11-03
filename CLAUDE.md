@@ -38,10 +38,14 @@ as a Fullstack Developer in Germany. Site language: German.
 | aubergine-soft | `#33283A` | surfaces, dividers, image placeholders |
 | mehl           | `#F3EDE8` | main text, icons                      |
 | pfeffer        | `#A99CA8` | secondary text                        |
-| rote-bete      | `#E0558A` | accent: links, focus, group headings  |
+| rote-bete      | `#E86A98` | accent: links, focus, group headings  |
 
 - Page background: subtle diagonal gradient (top left → bottom right):
   `#34233A` → `#241B26` (45%) → `#1C1520`
+- Light mode (follows `prefers-color-scheme`, no toggle; dark stays the default):
+  roles are remapped to `mehl` (page), `aubergine` (text) and five light palette colors:
+  `mehl-hell` `#FBF8F5`, `mehl-dunkel` `#EDE5E1` (gradient), `schalotte` `#E4D9DB` (surface),
+  `pfeffer-dunkel` `#6B5D6C` (muted), `rote-bete-dunkel` `#B8326A` (accent)
 - Avoid: green, yellow, brown
 - Tokens live in `src/index.css` (`@theme`) in two layers:
   - Palette (kitchen names): `aubergine`, `mehl`, `rote-bete`, ...
@@ -126,6 +130,8 @@ src/
 │       └── components/   components used only inside this section
 │           └── ProjectCard.tsx
 ├── content/              page content as TS files (projects.ts, techStack.ts)
+├── pages/                entry point + layout for the legal page (Impressum + Datenschutz);
+│                         its HTML file rechtliches.html lives in the project root (Vite multi-page)
 ├── App.tsx               composes the sections
 ├── main.tsx              entry point
 └── index.css             Tailwind import + theme
