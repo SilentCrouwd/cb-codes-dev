@@ -48,8 +48,8 @@
   - Business App, Kanban Board, Weather App, Quiz App, Calculator, POS App
   - Descriptions, tech and screenshots are drafts/placeholders for now (see "Content" below)
 - [x] Tech stack ("Werkzeuge": Simple Icons for logos, Lucide for generic icons)
-- [ ] Contact (links: email, GitHub, LinkedIn – no backend)
-- [ ] Footer (incl. Impressum / Datenschutz links)
+- [x] Contact (links: email, GitHub, LinkedIn – no backend)
+- [x] Footer (incl. Impressum / Datenschutz links)
 
 ## Phase 4 – Polish
 
@@ -62,6 +62,7 @@
 
 ## Phase 5 – Deployment
 
+- [ ] Create Impressum and Datenschutz pages (required before going live; footer already links to `impressum.html` / `datenschutz.html`)
 - [ ] GitHub Actions workflow (.yml) for GitHub Pages
 - [ ] Enable GitHub Pages in repo settings
 - [ ] Verify live site
@@ -75,6 +76,7 @@
 - [ ] Projects: screenshots 16:10 (`src/sections/Projects/components/ProjectCard.tsx`)
 - [ ] Contact: real GitHub and LinkedIn links (`src/content/contact.ts`)
 - [ ] Contact: photo of Chris, portrait 4:5 (`src/sections/Contact/Contact.tsx`)
+- [ ] Footer: cb.codes.design logo (`src/components/Footer.tsx`), link to business website if available
 - [ ] Final pass: review all texts one by one
 
 ## Later

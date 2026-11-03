@@ -1,3 +1,4 @@
+import { Footer } from './components/Footer';
 import { Header } from './components/Header';
 import { About } from './sections/About/About';
 import { Contact } from './sections/Contact/Contact';
@@ -16,6 +17,7 @@ export function App() {
         <TechStack />
         <Contact />
       </main>
+      <Footer />
     </>
   );
 }
