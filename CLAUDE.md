@@ -15,7 +15,7 @@ as a Fullstack Developer in Germany. Site language: German.
 
 1. Hero (full viewport)
 2. About me
-3. Projects (Business App, Weather App, Quiz App, Calculator, POS/Cash Register App)
+3. Projects (Business App, Kanban Board, Weather App, Quiz App, Calculator, POS/Cash Register App)
 4. Tech stack
 5. Contact
 

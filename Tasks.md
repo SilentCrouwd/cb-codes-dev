@@ -44,8 +44,9 @@
   - Image is a placeholder for now (AI image of Chris follows)
 - [x] About me
   - Text is a draft for now (see "Content" below)
-- [ ] Projects (data-driven: project data in its own file, rendered via a reusable `ProjectCard` component)
-  - Business App, Weather App, Quiz App, Calculator, POS App
+- [x] Projects (data-driven: project data in its own file, rendered via a reusable `ProjectCard` component)
+  - Business App, Kanban Board, Weather App, Quiz App, Calculator, POS App
+  - Descriptions, tech and screenshots are drafts/placeholders for now (see "Content" below)
 - [ ] Tech stack
 - [ ] Contact (links: email, GitHub, LinkedIn – no backend)
 - [ ] Footer (incl. Impressum / Datenschutz links)
@@ -69,6 +70,9 @@
 
 - [ ] Hero image: AI-generated image of Chris at the computer (`src/sections/Hero/Hero.tsx`)
 - [ ] About me: review/rewrite draft text, esp. 3rd paragraph (`src/content/about.ts`)
+- [ ] Projects: real descriptions and tech per project (`src/content/projects.ts`)
+- [ ] Projects: links per project – GitHub, live demo (`src/content/projects.ts`)
+- [ ] Projects: screenshots 16:10 (`src/sections/Projects/components/ProjectCard.tsx`)
 
 ## Later
 
