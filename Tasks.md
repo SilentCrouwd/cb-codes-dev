@@ -47,7 +47,7 @@
 - [x] Projects (data-driven: project data in its own file, rendered via a reusable `ProjectCard` component)
   - Business App, Kanban Board, Weather App, Quiz App, Calculator, POS App
   - Descriptions, tech and screenshots are drafts/placeholders for now (see "Content" below)
-- [ ] Tech stack
+- [x] Tech stack ("Werkzeuge": Simple Icons for logos, Lucide for generic icons)
 - [ ] Contact (links: email, GitHub, LinkedIn – no backend)
 - [ ] Footer (incl. Impressum / Datenschutz links)
 
@@ -73,6 +73,9 @@
 - [ ] Projects: real descriptions and tech per project (`src/content/projects.ts`)
 - [ ] Projects: links per project – GitHub, live demo (`src/content/projects.ts`)
 - [ ] Projects: screenshots 16:10 (`src/sections/Projects/components/ProjectCard.tsx`)
+- [ ] Contact: real GitHub and LinkedIn links (`src/content/contact.ts`)
+- [ ] Contact: photo of Chris, portrait 4:5 (`src/sections/Contact/Contact.tsx`)
+- [ ] Final pass: review all texts one by one
 
 ## Later
 
