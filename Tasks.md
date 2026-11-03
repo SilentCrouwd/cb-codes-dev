@@ -40,8 +40,10 @@
 
 ## Phase 3 – Sections
 
-- [ ] Hero (full viewport)
-- [ ] About me
+- [x] Hero (full viewport)
+  - Image is a placeholder for now (AI image of Chris follows)
+- [x] About me
+  - Text is a draft for now (see "Content" below)
 - [ ] Projects (data-driven: project data in its own file, rendered via a reusable `ProjectCard` component)
   - Business App, Weather App, Quiz App, Calculator, POS App
 - [ ] Tech stack
@@ -62,6 +64,11 @@
 - [ ] GitHub Actions workflow (.yml) for GitHub Pages
 - [ ] Enable GitHub Pages in repo settings
 - [ ] Verify live site
+
+## Content (replace drafts and placeholders)
+
+- [ ] Hero image: AI-generated image of Chris at the computer (`src/sections/Hero/Hero.tsx`)
+- [ ] About me: review/rewrite draft text, esp. 3rd paragraph (`src/content/about.ts`)
 
 ## Later
 

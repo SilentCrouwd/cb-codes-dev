@@ -27,6 +27,11 @@
   --font-sans: 'Atkinson Hyperlegible Next Variable', system-ui, sans-serif;
 }
 
+/* Fades an element in from left (transparent) to right (fully visible) */
+@utility fade-from-left {
+  mask-image: linear-gradient(to right, transparent, black);
+}
+
 @layer base {
   html {
     background-color: var(--color-page);
