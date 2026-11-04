@@ -1,4 +1,5 @@
 import { contact } from '../../content/contact';
+import contactPhoto from '../../assets/contact-chris.webp';
 
 export function Contact() {
   return (
@@ -26,10 +27,13 @@ export function Contact() {
         </ul>
       </div>
 
-      {/* Photo placeholder – replaced by a real photo of Chris later */}
-      <div
-        aria-hidden="true"
-        className="mt-12 aspect-4/5 max-w-xs rounded-lg bg-surface md:mt-0"
+      <img
+        src={contactPhoto}
+        alt={contact.photoAlt}
+        width={341}
+        height={512}
+        loading="lazy"
+        className="mt-12 aspect-4/5 w-full max-w-xs rounded-lg object-cover md:mt-0"
       />
     </section>
   );

@@ -4,13 +4,15 @@ export type HeroLink = {
 };
 
 export type HeroContent = {
-  name: string;
+  firstName: string;
+  lastName: string;
   story: string;
   links: HeroLink[];
 };
 
 export const hero: HeroContent = {
-  name: 'Christian Buchholz',
+  firstName: 'Christian',
+  lastName: 'Buchholz',
   story: 'Gelernter Koch. Heute baue ich Websites – mit derselben Sorgfalt.',
   links: [
     { label: 'Projekte ansehen', href: '#projekte' },

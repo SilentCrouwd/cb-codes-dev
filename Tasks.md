@@ -67,13 +67,16 @@
 ## Phase 5 – Deployment
 
 - [x] Create Impressum and Datenschutz pages (required before going live; combined on one page `rechtliches.html`)
-- [ ] GitHub Actions workflow (.yml) for GitHub Pages
-- [ ] Enable GitHub Pages in repo settings
-- [ ] Verify live site
+- [x] GitHub Actions workflow (.yml) for GitHub Pages
+  - Manual trigger only for now; add `push` trigger once Impressum/Datenschutz are filled in
+- [x] Enable GitHub Pages in repo settings
+- [x] Verify live site (https://silentcrouwd.github.io/cb-codes-dev/)
 
 ## Content (replace drafts and placeholders)
 
-- [ ] Hero image: AI-generated image of Chris at the computer (`src/sections/Hero/Hero.tsx`)
+- [x] Hero image: AI-generated image of Chris at the computer (`src/sections/Hero/Hero.tsx`)
+  - WebP, 1024 × 1536 px, 36 KB (`src/assets/hero-chris.webp`)
+  - Name split into first/last name; last name on its own line below `lg`
 - [ ] About me: review/rewrite draft text, esp. 3rd paragraph (`src/content/about.ts`)
 - [ ] Projects: real descriptions and tech per project (`src/content/projects.ts`)
 - [ ] Projects: links per project – GitHub, live demo (`src/content/projects.ts`)
@@ -81,6 +84,9 @@
 - [x] Contact: real GitHub and LinkedIn links (`src/content/contact.ts`)
 - [ ] Open Graph image 1200 × 630 px (`og:image` in `index.html`)
 - [ ] Contact: photo of Chris, portrait 4:5 (`src/sections/Contact/Contact.tsx`)
+  - Interim photo built in (`src/assets/contact-chris.webp`), must be replaced:
+    Chris doesn't like it, and it doesn't look good in light mode
+  - New photo: at least 640 px wide (current one is only 341 px, soft on retina)
 - [ ] Footer: cb.codes.design logo (`src/components/Footer.tsx`), link to business website if available
 - [ ] Impressum and Datenschutz: fill in placeholders, check Datenschutz draft (`src/content/legal.ts`)
 - [ ] Final pass: review all texts one by one

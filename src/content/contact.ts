@@ -6,12 +6,14 @@ export type ContactLink = {
 export type ContactContent = {
   heading: string;
   text: string;
+  photoAlt: string;
   links: ContactLink[];
 };
 
 export const contact: ContactContent = {
   heading: 'Kontakt',
   text: 'Du suchst jemanden, der sorgfältig arbeitet und Lust hat, dazuzulernen? Schreib mir – ich freue mich.',
+  photoAlt: 'Porträt von Christian Buchholz',
   links: [
     {
       label: 'E-Mail schreiben',
