@@ -61,7 +61,7 @@
 - [x] Accessibility (semantic HTML, contrast, keyboard navigation)
   - Skip link, labels moved to content, `lang="en"` for "Powered by", accent lightened to `#E86A98`
 - [x] SEO basics (title, meta description, Open Graph, favicon)
-  - `og:image` still missing (see "Content")
+  - `og:image` added (`public/og-image.jpg`, see "Content")
 - [x] Performance check (Lighthouse)
   - Mobile, production build: Performance 99, Accessibility 100, Best Practices 100, SEO 100
 
@@ -69,7 +69,7 @@
 
 - [x] Create Impressum and Datenschutz pages (required before going live; combined on one page `rechtliches.html`)
 - [x] GitHub Actions workflow (.yml) for GitHub Pages
-  - Manual trigger only for now; add `push` trigger once Impressum/Datenschutz are filled in
+  - Runs on every push to `main` (manual start via `workflow_dispatch` still possible)
 - [x] Enable GitHub Pages in repo settings
 - [x] Verify live site (https://silentcrouwd.github.io/cb-codes-dev/)
 

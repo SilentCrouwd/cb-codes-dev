@@ -1,8 +1,9 @@
 name: Deploy to GitHub Pages
 
 on:
-  # Manual start only, until Impressum/Datenschutz are filled in.
-  # Later add:  push: { branches: [main] }
+  # Deploy automatically on every push to main, manual start stays possible
+  push:
+    branches: [main]
   workflow_dispatch:
 
 # Only the rights this workflow needs: read the code, publish to Pages
