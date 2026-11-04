@@ -8,6 +8,8 @@ export type Project = {
   description: string;
   tech: string[];
   links: ProjectLink[];
+  /** Optional hint shown below the links, e.g. how to log in to the demo */
+  note?: string;
 };
 
 export type ProjectsContent = {
@@ -19,46 +21,127 @@ export const projectsSection: ProjectsContent = {
   heading: 'Projekte',
   projects: [
     {
-      title: 'Business App',
+      title: 'araDine – Business App',
       description:
-        'Eine Web-App für kleine Betriebe, die den Arbeitsalltag übersichtlicher macht.',
-      tech: ['React', 'TypeScript', 'Tailwind CSS'],
-      links: [],
+        'Im Betrieb laufen Bewirtungen noch über Formular, Drucker und Scanner. araDine bildet den ganzen Ablauf digital ab: von der Buchung über ein Dashboard für Mitarbeitende bis zur Übersicht für die Betriebsleitung. Herzstück ist ein mehrstufiges Formular, dessen Daten über vier Komponenten gesammelt und am Ende mit einem Klick abgeschickt werden. Aktuell testen meine Kolleginnen und Kollegen die App.',
+      tech: [
+        'React',
+        'TypeScript',
+        'Vite',
+        'Tailwind CSS',
+        'shadcn/ui',
+        'Supabase',
+        'React Router',
+      ],
+      links: [
+        {
+          label: 'Code auf GitHub',
+          href: 'https://github.com/SilentCrouwd/araDine',
+        },
+        { label: 'Live-Demo', href: 'https://silentcrouwd.github.io/araDine/' },
+      ],
+      note: 'Für die Live-Demo reicht eine beliebige E-Mail-Adresse.',
     },
     {
-      title: 'Kanban Board',
+      title: 'Dev Board – Kanban Board',
       description:
-        'Aufgaben anlegen und zwischen Spalten verschieben – von „Offen“ bis „Erledigt“.',
-      tech: ['React', 'TypeScript'],
-      links: [],
+        'Aufgaben anlegen und per Drag & Drop zwischen den Spalten verschieben – von „Offen“ bis „Erledigt“. Das Drag & Drop habe ich ohne fertige Bibliothek selbst gebaut. Die Karten werden in Supabase gespeichert, nach dem Neuladen ist also alles noch da.',
+      tech: [
+        'React',
+        'TypeScript',
+        'Vite',
+        'Tailwind CSS',
+        'shadcn/ui',
+        'Supabase',
+        'React Router',
+      ],
+      links: [
+        {
+          label: 'Code auf GitHub',
+          href: 'https://github.com/SilentCrouwd/dev-board',
+        },
+        {
+          label: 'Live-Demo',
+          href: 'https://silentcrouwd.github.io/dev-board/',
+        },
+      ],
+      note: 'Für die Live-Demo gibt es einen Gast-Login.',
     },
     {
-      title: 'Weather App',
+      title: 'cb-codes-dev – Portfolio',
       description:
-        'Zeigt das aktuelle Wetter und eine Vorhersage für jede Stadt – Daten live aus einer API.',
-      tech: ['JavaScript', 'REST API', 'CSS'],
-      links: [],
+        'Die Seite, auf der du gerade bist. Gebaut nach dem Prinzip Mise en place: erst Farben, Schriften und Struktur festlegen, dann umsetzen. Alle Texte liegen getrennt vom Code, die Seite folgt automatisch dem Hell- oder Dunkelmodus, und die Schriften sind DSGVO-konform selbst gehostet. Lighthouse: 100 bei Barrierefreiheit, Best Practices und SEO. Umgesetzt mit Claude Code als KI-Pair-Programmer – Planung, Design-Entscheidungen und Review aller Schritte lagen bei mir.',
+      tech: [
+        'React',
+        'TypeScript',
+        'Vite',
+        'Tailwind CSS',
+        'GitHub Actions',
+        'Claude Code',
+      ],
+      links: [
+        {
+          label: 'Code auf GitHub',
+          href: 'https://github.com/SilentCrouwd/cb-codes-dev',
+        },
+      ],
     },
     {
-      title: 'Quiz App',
+      title: 'Nutzerverwaltung',
       description:
-        'Ein Quiz mit Punktestand und direktem Feedback nach jeder Frage.',
-      tech: ['JavaScript', 'HTML', 'CSS'],
-      links: [],
+        'Mein erstes TypeScript-Projekt: Nutzer anlegen, anzeigen, bearbeiten und löschen – ein komplettes CRUD mit React. Die Daten werden im localStorage gespeichert und sind nach dem Neuladen noch da.',
+      tech: ['React', 'TypeScript', 'Vite', 'React Router', 'CSS'],
+      links: [
+        {
+          label: 'Code auf GitHub',
+          href: 'https://github.com/SilentCrouwd/nutzer-verwaltung',
+        },
+        {
+          label: 'Live-Demo',
+          href: 'https://silentcrouwd.github.io/nutzer-verwaltung/overview',
+        },
+      ],
     },
     {
-      title: 'Calculator',
+      title: 'Wetter-App',
       description:
-        'Ein Taschenrechner, der auch mit der Tastatur bedient werden kann.',
-      tech: ['JavaScript', 'HTML', 'CSS'],
-      links: [],
+        'Das Wetter für jede Stadt, live von WeatherAPI.com: aktuelle Werte, 7-Tage-Übersicht und eine Detailansicht. Ein passendes Bild zeigt, wie es vor Ort gerade aussieht – je nach Wetterlage und ob es Tag oder Nacht ist. Die Daten werden im localStorage zwischengespeichert, und die gesamte Oberfläche entsteht dynamisch per JavaScript – ganz ohne Framework.',
+      tech: ['JavaScript', 'HTML', 'CSS', 'WeatherAPI.com'],
+      links: [
+        {
+          label: 'Code auf GitHub',
+          href: 'https://github.com/SilentCrouwd/wetter-app',
+        },
+        {
+          label: 'Live-Demo',
+          href: 'https://silentcrouwd.github.io/wetter-app/',
+        },
+      ],
     },
     {
-      title: 'POS App',
+      title: 'Lernprojekte',
       description:
-        'Ein Kassensystem: Artikel erfassen, Summe berechnen, Bon anzeigen.',
-      tech: ['React', 'TypeScript'],
-      links: [],
+        'Meine ersten Schritte mit JavaScript, HTML und CSS: ein Quiz, eine Notiz-App, ein Kassensystem, ein Taschenrechner und eine Witze-App, die ihre Witze per Fetch aus einer API lädt und mit SCSS gestaltet ist. Kleine Projekte, an denen ich die Grundlagen gelernt habe.',
+      tech: ['JavaScript', 'HTML', 'CSS', 'SCSS', 'Fetch API'],
+      links: [
+        { label: 'Quiz', href: 'https://github.com/SilentCrouwd/QuizM4' },
+        {
+          label: 'Notiz-App',
+          href: 'https://github.com/SilentCrouwd/Notiz-appM5',
+        },
+        {
+          label: 'Kassensystem',
+          href: 'https://github.com/SilentCrouwd/Kassensystem',
+        },
+        {
+          label: 'Taschenrechner',
+          href: 'https://github.com/SilentCrouwd/Calculator',
+        },
+        {
+          label: 'Witze-App',
+          href: 'https://github.com/SilentCrouwd/Witze-App',
+        },
+      ],
     },
   ],
 };

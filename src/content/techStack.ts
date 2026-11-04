@@ -62,7 +62,7 @@ export const techStack: TechStackContent = {
     {
       heading: 'Als Nächstes',
       description:
-        'Backend lerne ich gerade in meiner Weiterbildung. Erste Erfahrung: Supabase in der Business App.',
+        'Backend lerne ich gerade in meiner Weiterbildung. Erste Erfahrung: Supabase in araDine und dem Dev Board.',
       tools: [
         { name: 'Supabase', iconType: 'brand', icon: siSupabase },
         { name: 'Backend-Entwicklung', iconType: 'ui', icon: Server },

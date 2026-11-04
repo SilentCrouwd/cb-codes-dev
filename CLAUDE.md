@@ -6,7 +6,8 @@ Personal portfolio website for Christian Buchholz ("Chris"), used for job applic
 as a Fullstack Developer in Germany. Site language: German.
 
 - Name shown on the site: Christian Buchholz
-- Background: trained chef, now in further training as a frontend developer;
+- Background: 18 years as an à la carte chef, now in further training at DevKarriere
+  (frontend and AI completed, backend next; goal: Fullstack Developer);
   runs a small business building static websites for small companies
 - Tone of voice: direct, down-to-earth, warm and personal
 - Client projects will be added once available
@@ -15,7 +16,9 @@ as a Fullstack Developer in Germany. Site language: German.
 
 1. Hero (full viewport)
 2. About me
-3. Projects (Business App, Kanban Board, Weather App, Quiz App, Calculator, POS/Cash Register App)
+3. Projects, in this order: araDine (Business App), Dev Board (Kanban Board), this portfolio,
+   Nutzerverwaltung, Wetter-App, Lernprojekte (one card: Quiz, Notiz-App, Kassensystem,
+   Taschenrechner, Witze-App)
 4. Tech stack
 5. Contact
 
@@ -32,13 +35,13 @@ as a Fullstack Developer in Germany. Site language: German.
 
 **Colors**
 
-| Token          | Hex       | Use                                   |
-| -------------- | --------- | ------------------------------------- |
-| aubergine      | `#241B26` | page background                       |
+| Token          | Hex       | Use                                    |
+| -------------- | --------- | -------------------------------------- |
+| aubergine      | `#241B26` | page background                        |
 | aubergine-soft | `#33283A` | surfaces, dividers, image placeholders |
-| mehl           | `#F3EDE8` | main text, icons                      |
-| pfeffer        | `#A99CA8` | secondary text                        |
-| rote-bete      | `#E86A98` | accent: links, focus, group headings  |
+| mehl           | `#F3EDE8` | main text, icons                       |
+| pfeffer        | `#A99CA8` | secondary text                         |
+| rote-bete      | `#E86A98` | accent: links, focus, group headings   |
 
 - Page background: subtle diagonal gradient (top left → bottom right):
   `#34233A` → `#241B26` (45%) → `#1C1520`

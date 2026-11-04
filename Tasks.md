@@ -45,7 +45,8 @@
 - [x] About me
   - Text is a draft for now (see "Content" below)
 - [x] Projects (data-driven: project data in its own file, rendered via a reusable `ProjectCard` component)
-  - Business App, Kanban Board, Weather App, Quiz App, Calculator, POS App
+  - araDine, Dev Board, Portfolio, Nutzerverwaltung, Wetter-App, Lernprojekte (Quiz, Notiz-App,
+    Kassensystem, Taschenrechner, Witze-App)
   - Descriptions, tech and screenshots are drafts/placeholders for now (see "Content" below)
 - [x] Tech stack ("Werkzeuge": Simple Icons for logos, Lucide for generic icons)
 - [x] Contact (links: email, GitHub, LinkedIn – no backend)
@@ -77,10 +78,19 @@
 - [x] Hero image: AI-generated image of Chris at the computer (`src/sections/Hero/Hero.tsx`)
   - WebP, 1024 × 1536 px, 36 KB (`src/assets/hero-chris.webp`)
   - Name split into first/last name; last name on its own line below `lg`
-- [ ] About me: review/rewrite draft text, esp. 3rd paragraph (`src/content/about.ts`)
-- [ ] Projects: real descriptions and tech per project (`src/content/projects.ts`)
-- [ ] Projects: links per project – GitHub, live demo (`src/content/projects.ts`)
+- [x] About me: review/rewrite draft text, esp. 3rd paragraph (`src/content/about.ts`)
+  - Kitchen only in 1st paragraph (as origin of dev-relevant skills); goal: Fullstack
+- [x] Projects: real descriptions and tech per project (`src/content/projects.ts`)
+  - Small JS/HTML/CSS exercises combined into one "Lernprojekte" card
+  - Optional `note` field for demo hints (e.g. login) shown below the links
+- [x] Projects: links per project – GitHub, live demo (`src/content/projects.ts`)
+- [x] Projects: add this portfolio site as its own project entry (React, TypeScript, Tailwind) (`src/content/projects.ts`)
+  - Position: after Dev Board, before Wetter-App
 - [ ] Projects: screenshots 16:10 (`src/sections/Projects/components/ProjectCard.tsx`)
+  - Do this after all project texts are done
+  - Chris takes the screenshots himself (browser ~1440 × 900 px, strongest view, e.g. dashboard
+    behind the login); Claude crops to 16:10, converts to WebP and builds them in
+  - Image already moved down a bit next to the text (`md:mt-6`)
 - [x] Contact: real GitHub and LinkedIn links (`src/content/contact.ts`)
 - [ ] Open Graph image 1200 × 630 px (`og:image` in `index.html`)
 - [ ] Contact: photo of Chris, portrait 4:5 (`src/sections/Contact/Contact.tsx`)
@@ -96,3 +106,4 @@
 - [ ] Backend (e.g. contact form API) – after backend training
 - [ ] Contact form (needs backend)
 - [ ] Add client projects (once available)
+- [ ] Mention own business in "About me" once it starts (January 2027; so far: company homepage + 3 example sites, this portfolio will become part of the company site)

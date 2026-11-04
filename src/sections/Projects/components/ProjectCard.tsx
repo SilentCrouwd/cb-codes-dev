@@ -8,7 +8,10 @@ export function ProjectCard({ project }: ProjectCardProps) {
   return (
     <article className="grid gap-6 md:grid-cols-2 md:gap-12">
       {/* Screenshot placeholder – replaced by a real screenshot later */}
-      <div aria-hidden="true" className="aspect-16/10 rounded-lg bg-surface" />
+      <div
+        aria-hidden="true"
+        className="aspect-16/10 rounded-lg bg-surface md:mt-6"
+      />
 
       <div>
         <h3 className="font-display text-2xl">{project.title}</h3>
@@ -32,6 +35,9 @@ export function ProjectCard({ project }: ProjectCardProps) {
               </li>
             ))}
           </ul>
+        )}
+        {project.note && (
+          <p className="mt-3 text-sm text-muted">{project.note}</p>
         )}
       </div>
     </article>
