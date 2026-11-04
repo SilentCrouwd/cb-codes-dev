@@ -1,6 +1,15 @@
+import araDineScreenshot from '../assets/project-aradine.webp';
+import devBoardScreenshot from '../assets/project-devboard.webp';
+import nutzerverwaltungScreenshot from '../assets/project-nutzerverwaltung.webp';
+
 export type ProjectLink = {
   label: string;
   href: string;
+};
+
+export type ProjectImage = {
+  src: string;
+  alt: string;
 };
 
 export type Project = {
@@ -8,6 +17,8 @@ export type Project = {
   description: string;
   tech: string[];
   links: ProjectLink[];
+  /** Screenshot (16:10). Without it, the card shows a placeholder */
+  image?: ProjectImage;
   /** Optional hint shown below the links, e.g. how to log in to the demo */
   note?: string;
 };
@@ -40,6 +51,10 @@ export const projectsSection: ProjectsContent = {
         },
         { label: 'Live-Demo', href: 'https://silentcrouwd.github.io/araDine/' },
       ],
+      image: {
+        src: araDineScreenshot,
+        alt: 'Abrechnungsübersicht von araDine mit Kennzahlen und Listen der Bewirtungen nach Status',
+      },
       note: 'Für die Live-Demo reicht eine beliebige E-Mail-Adresse.',
     },
     {
@@ -65,6 +80,10 @@ export const projectsSection: ProjectsContent = {
           href: 'https://silentcrouwd.github.io/dev-board/',
         },
       ],
+      image: {
+        src: devBoardScreenshot,
+        alt: 'Kanban Board von Dev Board mit den Spalten ToDo, inProgress und Done',
+      },
       note: 'Für die Live-Demo gibt es einen Gast-Login.',
     },
     {
@@ -101,6 +120,10 @@ export const projectsSection: ProjectsContent = {
           href: 'https://silentcrouwd.github.io/nutzer-verwaltung/overview',
         },
       ],
+      image: {
+        src: nutzerverwaltungScreenshot,
+        alt: 'Startseite der Nutzerverwaltung mit Seitenmenü und Graffiti-Schriftzug',
+      },
     },
     {
       title: 'Wetter-App',

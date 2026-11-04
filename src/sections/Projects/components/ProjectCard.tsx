@@ -1,4 +1,5 @@
 import type { Project } from '../../../content/projects';
+import { ProjectScreenshot } from './ProjectScreenshot';
 
 type ProjectCardProps = {
   project: Project;
@@ -7,11 +8,7 @@ type ProjectCardProps = {
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
     <article className="grid gap-6 md:grid-cols-2 md:gap-12">
-      {/* Screenshot placeholder – replaced by a real screenshot later */}
-      <div
-        aria-hidden="true"
-        className="aspect-16/10 rounded-lg bg-surface md:mt-6"
-      />
+      <ProjectScreenshot image={project.image} />
 
       <div>
         <h3 className="font-display text-2xl">{project.title}</h3>
