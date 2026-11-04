@@ -86,22 +86,23 @@
 - [x] Projects: links per project – GitHub, live demo (`src/content/projects.ts`)
 - [x] Projects: add this portfolio site as its own project entry (React, TypeScript, Tailwind) (`src/content/projects.ts`)
   - Position: after Dev Board, before Wetter-App
-- [ ] Projects: screenshots 16:10 (`src/sections/Projects/components/ProjectCard.tsx`)
-  - Do this after all project texts are done
+- [x] Projects: screenshots 16:10 (`src/sections/Projects/components/ProjectScreenshot.tsx`)
   - Chris takes the screenshots himself (strongest view, e.g. dashboard behind the login):
     Chrome DevTools device toolbar, Responsive 1280 × 800, DPR 2, "Capture screenshot"
     → 2560 × 1600 px (exactly 16:10)
-  - Claude trims 4 px per side (DevTools adds a 2 px border), resizes to 1200 × 750,
+  - Claude crops if useful (e.g. araDine had its own 2 px border), resizes to 1200 × 750,
     converts to WebP (`cwebp -q 88`) and builds them in via the optional `image` field
   - Lernprojekte: collage of several projects; Portfolio: Claude takes the screenshot
   - Image already moved down a bit next to the text (`md:mt-6`)
   - [x] araDine (`src/assets/project-aradine.webp`)
   - [x] Dev Board (`src/assets/project-devboard.webp`, cropped around the columns)
-  - [ ] Portfolio
+  - [x] Portfolio (`src/assets/project-portfolio.webp`, taken by Claude via headless Chrome from
+        the local production build, dark mode forced)
   - [x] Nutzerverwaltung (`src/assets/project-nutzerverwaltung.webp`, `-q 70` because of the
         noisy texture)
-  - [ ] Wetter-App
-  - [ ] Lernprojekte (collage)
+  - [x] Wetter-App (`src/assets/project-wetter.webp`, cropped around the city cards)
+  - [x] Lernprojekte (`src/assets/project-lernprojekte.webp`, collage of all five, taken by Claude
+        via headless Chrome from the live demos)
 - [x] Contact: real GitHub and LinkedIn links (`src/content/contact.ts`)
 - [ ] Open Graph image 1200 × 630 px (`og:image` in `index.html`)
 - [ ] Contact: photo of Chris, portrait 4:5 (`src/sections/Contact/Contact.tsx`)

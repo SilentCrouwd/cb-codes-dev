@@ -1,6 +1,9 @@
 import araDineScreenshot from '../assets/project-aradine.webp';
 import devBoardScreenshot from '../assets/project-devboard.webp';
+import lernprojekteScreenshot from '../assets/project-lernprojekte.webp';
 import nutzerverwaltungScreenshot from '../assets/project-nutzerverwaltung.webp';
+import portfolioScreenshot from '../assets/project-portfolio.webp';
+import wetterScreenshot from '../assets/project-wetter.webp';
 
 export type ProjectLink = {
   label: string;
@@ -104,6 +107,10 @@ export const projectsSection: ProjectsContent = {
           href: 'https://github.com/SilentCrouwd/cb-codes-dev',
         },
       ],
+      image: {
+        src: portfolioScreenshot,
+        alt: 'Startseite dieses Portfolios im Dark Mode mit Name, Kurzvorstellung und Foto',
+      },
     },
     {
       title: 'Nutzerverwaltung',
@@ -140,6 +147,10 @@ export const projectsSection: ProjectsContent = {
           href: 'https://silentcrouwd.github.io/wetter-app/',
         },
       ],
+      image: {
+        src: wetterScreenshot,
+        alt: 'Wetter-App mit drei Städten, aktuellen Temperaturen und passenden Wetterbildern',
+      },
     },
     {
       title: 'Lernprojekte',
@@ -165,6 +176,10 @@ export const projectsSection: ProjectsContent = {
           href: 'https://github.com/SilentCrouwd/Witze-App',
         },
       ],
+      image: {
+        src: lernprojekteScreenshot,
+        alt: 'Collage aus fünf Lernprojekten: Notiz-App, Taschenrechner, Witze-App, Quiz und Kassensystem',
+      },
     },
   ],
 };
