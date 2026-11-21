@@ -7,13 +7,13 @@ export function Hero() {
       {/* Decorative background image – the name is already shown as text */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 md:left-auto md:w-1/2"
+        className="absolute inset-0 md:left-auto md:w-auto md:max-w-[50%] md:aspect-[2/3]"
       >
         <img
           src={heroImage}
           alt=""
           fetchPriority="high"
-          className="size-full object-cover md:fade-from-left"
+          className="size-full object-cover object-top md:fade-from-left"
         />
         {/* Mobile: darken the image so the text stays readable */}
         <div className="absolute inset-0 bg-page/85 md:hidden" />
