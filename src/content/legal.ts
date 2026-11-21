@@ -22,25 +22,24 @@ const impressum: LegalText = {
     {
       heading: 'Angaben gemäß § 5 DDG',
       paragraphs: [
-        '[Vor- und Nachname]',
-        '[Firmenname, falls vorhanden]',
-        '[Straße Hausnummer]',
-        '[PLZ Ort]',
+        'Christian Buchholz',
+        'Hemmendorferstr. 34',
+        '31020 Lauenstein',
       ],
     },
     {
       heading: 'Kontakt',
-      paragraphs: ['E-Mail: [E-Mail-Adresse]', 'Telefon: [optional]'],
+      paragraphs: ['E-Mail: chris.buchholz.lauenau@googlemail.com'],
     },
     {
       heading: 'Umsatzsteuer',
       paragraphs: [
-        '[Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG – oder: Kleinunternehmer gemäß § 19 UStG, daher keine Umsatzsteuer-ID]',
+        ' Kleinunternehmer gemäß § 19 UStG, daher keine Umsatzsteuer-ID',
       ],
     },
     {
       heading: 'Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV',
-      paragraphs: ['[Vor- und Nachname, Anschrift wie oben]'],
+      paragraphs: ['Christian Buchholz, Hemmendorferstr. 34, 31020 Lauenstein'],
     },
   ],
 };
@@ -53,7 +52,7 @@ const datenschutz: LegalText = {
       heading: 'Verantwortlicher',
       paragraphs: [
         'Verantwortlich für die Datenverarbeitung auf dieser Website ist:',
-        '[Vor- und Nachname], [Straße Hausnummer], [PLZ Ort], E-Mail: [E-Mail-Adresse]',
+        'Christian Buchholz, Hemmendorferstr. 34, 31020 Lauenstein, E-Mail: chris.buchholz.lauenau@googlemail.com',
       ],
     },
     {
@@ -97,7 +96,7 @@ const datenschutz: LegalText = {
     },
     {
       heading: 'Stand',
-      paragraphs: ['[Monat Jahr]'],
+      paragraphs: ['November 2026'],
     },
   ],
 };

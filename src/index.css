@@ -13,11 +13,11 @@
   --color-rote-bete: #e86a98;
 
   /* Light palette – only used when the visitor's system is set to light */
-  --color-mehl-hell: #fbf8f5;
-  --color-mehl-dunkel: #ede5e1;
-  --color-schalotte: #e4d9db;
-  --color-pfeffer-dunkel: #6b5d6c;
-  --color-rote-bete-dunkel: #b8326a;
+  --color-schalotte: #c7bbbd;
+  --color-pfeffer-dunkel: #5e505f;
+  --color-rote-bete-dunkel: #962657;
+  --color-lavendel: #e4beeb;
+  --color-lavendel-grau: #ecc5de;
 
   /* Roles – what a color is used for. Components use only these,
      so a light mode later only needs to remap the roles. */
@@ -52,8 +52,8 @@
 @media (prefers-color-scheme: light) {
   :root {
     --color-page: var(--color-mehl);
-    --color-page-from: var(--color-mehl-hell);
-    --color-page-to: var(--color-mehl-dunkel);
+    --color-page-from: var(--color-lavendel);
+    --color-page-to: var(--color-lavendel-grau);
     --color-surface: var(--color-schalotte);
     --color-text: var(--color-aubergine);
     --color-muted: var(--color-pfeffer-dunkel);
@@ -61,9 +61,26 @@
   }
 }
 
-/* Fades an element in from left (transparent) to right (fully visible) */
-@utility fade-from-left {
-  mask-image: linear-gradient(to right, transparent, black);
+/* Fades an element in from the left and from the top edge.
+   The top stays fully transparent behind the header,
+   so the navigation always sits on the page color and stays readable. */
+@utility fade-from-left-and-top {
+  mask-image:
+    linear-gradient(to right, transparent, black),
+    linear-gradient(to bottom, transparent 4.5rem, black 11rem);
+  /* Only the area visible in BOTH gradients is shown */
+  mask-composite: intersect;
+}
+
+/* Mobile hero: image starts below the header and fades out towards the text */
+@utility fade-top-and-bottom {
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 4.5rem,
+    black 11rem,
+    black 40%,
+    transparent 65%
+  );
 }
 
 @layer base {

@@ -3,7 +3,7 @@ import heroImage from '../../assets/hero-chris.webp';
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-svh items-center overflow-hidden py-32">
+    <section className="relative flex min-h-svh items-end overflow-hidden py-32 md:items-center">
       {/* Decorative background image – the name is already shown as text */}
       <div
         aria-hidden="true"
@@ -13,10 +13,8 @@ export function Hero() {
           src={heroImage}
           alt=""
           fetchPriority="high"
-          className="size-full object-cover object-top md:fade-from-left"
+          className="size-full object-cover object-top fade-top-and-bottom md:fade-from-left-and-top"
         />
-        {/* Mobile: darken the image so the text stays readable */}
-        <div className="absolute inset-0 bg-page/85 md:hidden" />
       </div>
 
       <div className="relative mx-auto w-full max-w-6xl px-6">

@@ -47,8 +47,9 @@ as a Fullstack Developer in Germany. Site language: German.
   `#34233A` → `#241B26` (45%) → `#1C1520`
 - Light mode (follows `prefers-color-scheme`, no toggle; dark stays the default):
   roles are remapped to `mehl` (page), `aubergine` (text) and five light palette colors:
-  `mehl-hell` `#FBF8F5`, `mehl-dunkel` `#EDE5E1` (gradient), `schalotte` `#E4D9DB` (surface),
-  `pfeffer-dunkel` `#6B5D6C` (muted), `rote-bete-dunkel` `#B8326A` (accent)
+  `lavendel` `#E4BEEB` and `lavendel-grau` `#ECC5DE` (gradient), `schalotte` `#E4D9DB` (surface),
+  `pfeffer-dunkel` `#5E505F` (muted), `rote-bete-dunkel` `#962657` (accent)
+- Light page gradient: `#E4BEEB` → `#F3EDE8` (45%) → `#ECC5DE`
 - Avoid: green, yellow, brown
 - Tokens live in `src/index.css` (`@theme`) in two layers:
   - Palette (kitchen names): `aubergine`, `mehl`, `rote-bete`, ...

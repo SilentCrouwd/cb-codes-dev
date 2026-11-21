@@ -1,4 +1,5 @@
 import { footer } from '../content/footer';
+import logo from '../assets/logo-cb-codes-design.webp';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -10,9 +11,7 @@ export function Footer() {
       </p>
       <p className="flex items-center gap-2">
         <span lang="en">{footer.poweredByLabel}</span>
-        {/* Logo placeholder – replaced by the cb.codes.design logo later */}
-        <span aria-hidden="true" className="size-5 rounded-full bg-surface" />
-        <span className="text-text">{footer.businessName}</span>
+        <img src={logo} alt={footer.businessName} className="h-10 w-auto" />
       </p>
       <nav aria-label={footer.navLabel}>
         <ul className="flex gap-6">
