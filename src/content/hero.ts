@@ -13,7 +13,7 @@ export type HeroContent = {
 export const hero: HeroContent = {
   firstName: 'Christian',
   lastName: 'Buchholz',
-  story: 'Gelernter Koch. Heute baue ich Websites – mit derselben Sorgfalt.',
+  story: 'Gelernter Koch. Heute schreibe ich Code – mit derselben Sorgfalt.',
   links: [
     { label: 'Projekte ansehen', href: '#projekte' },
     { label: 'Kontakt aufnehmen', href: '#kontakt' },
